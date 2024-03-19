@@ -41,8 +41,8 @@ function App() {
       <button onClick={handleClick}>Populate books variable</button>
       <button onClick={() => setBooks(undefined)}>Remove books variable</button>
 
-      {books !== undefined && (
-        <div className="container"> {/* Aplicamos la clase 'container' para el contenedor principal */}
+      {books && (
+        <div className="container">
           <h2>Books:</h2>
           <ul>
             {books.map((book) => (
